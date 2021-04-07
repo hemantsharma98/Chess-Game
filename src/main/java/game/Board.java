@@ -377,6 +377,8 @@ public class Board extends JPanel {
             try{
                 label.setText("Black:  "+blackTurn+"    "+"White:  "+whiteTurn);
                 label.setBounds(50,50, 150,20);
+                resetButton.setBounds(50,250,95,30);
+                movesFrame.add(resetButton);
                 movesFrame.add(label);
                 movesFrame.setSize(400,400);
                 movesFrame.setVisible(true);
