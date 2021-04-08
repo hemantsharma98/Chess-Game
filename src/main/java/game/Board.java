@@ -378,6 +378,12 @@ public class Board extends JPanel {
                 label.setText("Black:  "+blackTurn+"    "+"White:  "+whiteTurn);
                 label.setBounds(50,50, 150,20);
                 resetButton.setBounds(50,250,95,30);
+                resetButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        System.out.println("Resent listener");
+                    }
+                });
                 movesFrame.add(resetButton);
                 movesFrame.add(label);
                 movesFrame.setSize(400,400);
